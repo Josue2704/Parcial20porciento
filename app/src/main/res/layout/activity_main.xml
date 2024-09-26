@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="?android:attr/windowBackground">
+
+    <!-- Botón de la cámara con estilo material -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Solicitar Permiso Cámara"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:cornerRadius="8dp"
+        app:icon="@drawable/ic_camera"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        app:iconTint="@color/black" />
+
+    <!-- Botón de la ubicación con estilo material -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Solicitar Permiso Ubicación"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:cornerRadius="8dp"
+        app:icon="@drawable/ic_location"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        app:iconTint="@color/black" />
+
+    <!-- Botón de almacenamiento con estilo material -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_storage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Solicitar Permiso Almacenamiento"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:cornerRadius="8dp"
+        app:icon="@drawable/ic_storage"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        app:iconTint="@color/black" />
+
+    <!-- TextView con estilo mejorado -->
+    <TextView
+        android:id="@+id/permission_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado de los permisos"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="20dp"
+        android:background="@drawable/textview_background" />
+
+</LinearLayout>
